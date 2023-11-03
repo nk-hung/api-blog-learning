@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  dev-rdb:
+    image: 'mongo'
+    ports:
+      -27017:27017
+    environment:
+      MONGO_USER: BLOG_USER
+      MONGO_PASSWORD: BLOG_PASS
+      MONGO_DB: BLOG_DB
